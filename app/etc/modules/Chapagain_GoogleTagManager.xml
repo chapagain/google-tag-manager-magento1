@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Chapagain_GoogleTagManager>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Chapagain_GoogleTagManager>
+    </modules>
+</config> 

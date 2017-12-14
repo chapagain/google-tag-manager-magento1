@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+   <tabs>
+        <chapagainall translate="label" module="googletagmanager">
+            <label>Chapagain Extensions</label>
+            <sort_order>250</sort_order>
+        </chapagainall>
+    </tabs>
+    <sections>
+        <chapagaininfo translate="label" module="googletagmanager">
+			<label>Info</label>
+			<tab>chapagainall</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>10</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+                <info>
+                    <frontend_model>googletagmanager/system_config_info</frontend_model>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                </info>
+			</groups>
+		</chapagaininfo>
+           
+		<googletagmanager module="googletagmanager">
+            <label>Google Tag Manager</label>
+            <tab>chapagainall</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+			<groups>
+				<general translate="label">
+					<label>General Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>20</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<is_enable translate="label comment">
+							<label>Enable</label>
+							<comment>Enable/Disable Google Tag Manager</comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</is_enable>
+						<container_id translate="label comment">
+							<label>Container ID</label>
+							<comment>GTM Container ID</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</container_id>
+						<is_enable_data_layer translate="label comment">
+							<label>Enable Data Layer</label>
+							<!--<comment>Enable/Disable Google Tag Manager</comment>-->
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</is_enable_data_layer>
+					</fields>
+				</general>
+			</groups>						
+		</googletagmanager>			
+    </sections>
+</config>
