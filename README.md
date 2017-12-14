@@ -41,3 +41,8 @@ Google Tag Manager account from [here](https://tagmanager.google.com/?hl=en#/adm
     - Enable/Disable module
     - Enable/Disable data layer 
     - Add container ID of your site from Google Tag Manager
+    
+## Links
+
+- This extension is also available on Magento Marketplace: [Google Tag Manager on Magento Marketplace](https://marketplace.magento.com/chapagain-chapagain-googletagmanager.html)
+- BLOG: [http://blog.chapagain.com.np/google-tag-manager-gtm-magento-extension-free/](http://blog.chapagain.com.np/google-tag-manager-gtm-magento-extension-free/)
