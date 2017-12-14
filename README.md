@@ -38,6 +38,6 @@ Google Tag Manager account from [here](https://tagmanager.google.com/?hl=en#/adm
 2. Go to `System → Configuration` page
 3. On left sidebar, click on `CHAPAGAIN EXTENSIONS → Google Tag Manager` menu
 4. Here, you will see the following settings from where you can: 
-a) Enable/Disable module
-b) Enable/Disable data layer 
-c) Add container ID of your site from Google Tag Manager
+    - Enable/Disable module
+    - Enable/Disable data layer 
+    - Add container ID of your site from Google Tag Manager
