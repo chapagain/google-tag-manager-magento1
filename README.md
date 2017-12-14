@@ -5,14 +5,14 @@ and gather valuable visitor data from your website and make important decisions 
 business. This extension also provides e-commerce transaction tracking feature. You just need to enter
 your Tag Manager container id in the extension's configuration settings.
 
-[https://support.google.com/tagmanager/answer/6102821?hl=en](Google Tag Manager) allows you to quickly and easily update tags and code snippets on your website or
+[Google Tag Manager](https://support.google.com/tagmanager/answer/6102821?hl=en) allows you to quickly and easily update tags and code snippets on your website or
 mobile app, such as those intended for traffic analysis and marketing optimization. You can add and
 update AdWords, Google Analytics, Floodlight, and 3rd party or custom tags from the Google Tag
 Manager user interface instead of editing site code. This reduces errors, frees you from having to
 involve a web developer, and allows you to quickly deploy new features or content onto your site.
 
 Google Tag Manager are FREE of charge services offered by Google. You need to create a separate
-Google Tag Manager account from [https://tagmanager.google.com/?hl=en#/admin/accounts/create](here) and link the account with your Magento store by adding the
+Google Tag Manager account from [here](https://tagmanager.google.com/?hl=en#/admin/accounts/create) and link the account with your Magento store by adding the
 "Container ID" of your Google Tag Manager account to the current extension's configuration setting.
 
 ## Features
