@@ -8,8 +8,11 @@ Default layout, loads most of the pages
 
     <default>
         <!-- Chapagain_GoogleTagManager -->
-        <reference name="after_body_start" before="-">
+        <reference name="head" after="-">
             <block type="googletagmanager/gtm" name="chapagain_google_tag_manager" as="chapagain_google_tag manager" template="chapagain/googletagmanager/gtm.phtml" />
+        </reference>
+        <reference name="after_body_start" before="-">
+            <block type="googletagmanager/gtm" name="chapagain_google_tag_manager_noscript" as="chapagain_google_tag manager_noscript" template="chapagain/googletagmanager/noscript.phtml" />
         </reference>
     </default>
 </layout>
