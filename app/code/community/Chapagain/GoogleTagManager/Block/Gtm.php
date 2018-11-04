@@ -188,9 +188,9 @@ class Chapagain_GoogleTagManager_Block_Gtm extends Mage_Core_Block_Template
 			//$objOrder->transactionTax = str_replace(',', '', Mage::getModel('directory/currency')->formatTxt($order->getBaseTaxAmount(), array('display' => Zend_Currency::NO_SYMBOL)));
 			//$objOrder->transactionShipping = str_replace(',', '', Mage::getModel('directory/currency')->formatTxt($order->getBaseShippingAmount(), array('display' => Zend_Currency::NO_SYMBOL)));
 
-			$objOrder->transactionTotal = (string) Mage::app()->getLocale()->getNumber($order->getBaseGrandTotal());
-			$objOrder->transactionTax = (string) Mage::app()->getLocale()->getNumber($order->getBaseTaxAmount());
-			$objOrder->transactionShipping = (string) Mage::app()->getLocale()->getNumber($order->getBaseShippingAmount());
+			$objOrder->transactionTotal = (float) Mage::app()->getLocale()->getNumber($order->getBaseGrandTotal());
+			$objOrder->transactionTax = (float) Mage::app()->getLocale()->getNumber($order->getBaseTaxAmount());
+			$objOrder->transactionShipping = (float) Mage::app()->getLocale()->getNumber($order->getBaseShippingAmount());
 
 
 			$objOrder->transactionProducts = $aItems;
@@ -209,9 +209,9 @@ class Chapagain_GoogleTagManager_Block_Gtm extends Mage_Core_Block_Template
 			//$objOrder->ecommerce->purchase->actionField->tax = str_replace(',', '', Mage::getModel('directory/currency')->formatTxt($order->getBaseTaxAmount(), array('display' => Zend_Currency::NO_SYMBOL)));
 			//$objOrder->ecommerce->purchase->actionField->shipping = str_replace(',', '', Mage::getModel('directory/currency')->formatTxt($order->getBaseShippingAmount(), array('display' => Zend_Currency::NO_SYMBOL)));
 
-			$objOrder->ecommerce->purchase->actionField->revenue = (string) Mage::app()->getLocale()->getNumber($order->getBaseGrandTotal());
-			$objOrder->ecommerce->purchase->actionField->tax = (string) Mage::app()->getLocale()->getNumber($order->getBaseTaxAmount());
-			$objOrder->ecommerce->purchase->actionField->shipping = (string) Mage::app()->getLocale()->getNumber($order->getBaseShippingAmount());
+			$objOrder->ecommerce->purchase->actionField->revenue = (float) Mage::app()->getLocale()->getNumber($order->getBaseGrandTotal());
+			$objOrder->ecommerce->purchase->actionField->tax = (float) Mage::app()->getLocale()->getNumber($order->getBaseTaxAmount());
+			$objOrder->ecommerce->purchase->actionField->shipping = (float) Mage::app()->getLocale()->getNumber($order->getBaseShippingAmount());
 			
 			
 			$coupon = $order->getCouponCode();
